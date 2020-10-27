@@ -6,7 +6,7 @@ export default function ImagePreview({ src, alt, author }) {
     <>
       <div className="imageContainer">
         <img className="imageThumb" src={src} alt={alt} />
-        <p className="imageAuthor"> Author: {author}</p>
+        <p className> Author: {author}</p>
       </div>
     </>
   );
