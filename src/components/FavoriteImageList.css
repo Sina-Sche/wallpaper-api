@@ -1,0 +1,8 @@
+.favorite_image_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.favorite_image_container > img {
+  object-fit: contain;
+}

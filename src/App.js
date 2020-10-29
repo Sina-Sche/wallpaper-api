@@ -26,7 +26,7 @@ function App() {
         />
       )}
       <FavoriteImageList
-        photoIds={["UjD08DRW24E", "k38v31SkZdo", "AW_P_NU9MI8"]}
+        photoIds={JSON.parse(localStorage.getItem("favorites")) || []}
       />
     </main>
   );

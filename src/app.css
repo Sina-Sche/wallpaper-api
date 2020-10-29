@@ -14,7 +14,3 @@ main {
 .random_button:hover {
   background-color: #420000;
 }
-.favorite_image_container {
-  display: flex;
-  justify-content: space-around;
-}
