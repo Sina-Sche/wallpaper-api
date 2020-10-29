@@ -1,5 +1,5 @@
 import "./app.css";
-import ImagePreview from "./components/imagePreview";
+import ImagePreview from "./components/ImagePreview";
 import { useState } from "react";
 import { getRandomImage } from "./api/getRandomImage";
 
