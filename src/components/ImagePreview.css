@@ -16,12 +16,17 @@
 }
 .fav_button {
   font-size: 25px;
-  color: red;
+  color: rgb(95, 7, 7);
   position: absolute;
   z-index: 1;
   cursor: pointer;
-  background: transparent;
-  border: none;
+  background: rgba(255, 255, 255, 0.425);
+  border: 1px solid white;
+  border-radius: 100%;
   right: 10px;
   top: 10px;
+}
+.fav_button:hover {
+  background: transparent;
+  color: white;
 }
