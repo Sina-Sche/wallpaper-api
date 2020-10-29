@@ -1,4 +1,5 @@
 import React from "react";
+import { getFavorites } from "../api/storage";
 import "./ImagePreview.css";
 
 export default function ImagePreview({ src, alt, author, id }) {
@@ -8,13 +9,7 @@ export default function ImagePreview({ src, alt, author, id }) {
         <button
           className="fav_button"
           onClick={() => {
-            let favorites = null;
-            try {
-              favorites = JSON.parse(localStorage.getItem("favorites")) || [];
-            } catch (error) {
-              console.error(error);
-              favorites = [];
-            }
+            const favorites = getFavorites();
 
             if (favorites.includes(id)) {
               return;

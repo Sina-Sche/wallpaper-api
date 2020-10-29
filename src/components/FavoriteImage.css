@@ -1,0 +1,12 @@
+.favorite_image {
+  width: 200px;
+  height: 100px;
+  object-fit: contain;
+}
+.delete_icon {
+  position: absolute;
+  z-index: 1;
+  cursor: pointer;
+  right: 10px;
+  top: 10px;
+}
