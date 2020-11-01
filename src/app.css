@@ -3,15 +3,3 @@ main {
   flex-direction: column;
   place-items: center;
 }
-.random_button {
-  margin: 20px;
-  border-radius: 10px;
-  background-color: #420000ad;
-  color: white;
-  cursor: pointer;
-  border: none;
-  padding: 0.5rem;
-}
-.random_button:hover {
-  background-color: #420000;
-}

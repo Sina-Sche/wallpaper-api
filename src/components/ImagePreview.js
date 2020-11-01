@@ -1,13 +1,13 @@
 import React from "react";
 import { getFavorites } from "../api/storage";
+import IconButton from "./IconButton";
 import "./ImagePreview.css";
 
 export default function ImagePreview({ src, alt, author, id }) {
   return (
     <>
       <div className="imageContainer">
-        <button
-          className="fav_button"
+        <IconButton
           onClick={() => {
             const favorites = getFavorites();
 
@@ -19,7 +19,7 @@ export default function ImagePreview({ src, alt, author, id }) {
           }}
         >
           ♥
-        </button>
+        </IconButton>
         <img className="imageThumb" src={src} alt={alt} />
         <p className> Author: {author}</p>
       </div>
